@@ -10,7 +10,7 @@ import logging
 logging.basicConfig(level=logging.INFO,
 					format='%(asctime)s %(filename)s] %(levelname)s %(message)s',
 					datefmt='%Y-%m-%d %H:%M:%S',
-					filename='test_liepin_log.log',
+					filename='juxian_log.log',
 					filemode='a')
 # 输出到屏幕
 console = logging.StreamHandler()
@@ -20,9 +20,9 @@ console.setFormatter(formatter)
 logging.getLogger('').addHandler(console)
 
 
-def test_liepin():
+def test_juxian():
 	"""
-	导入解析liepin简历方法
+	导入解析juxian简历方法
 	:param min_time:
 	:param max_time:
 	:return:
@@ -117,4 +117,4 @@ def test_liepin():
 
 
 if __name__ == '__main__':
-	test_liepin()
+	test_juxian()
